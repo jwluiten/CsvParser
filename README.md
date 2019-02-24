@@ -15,4 +15,4 @@ With the following exceptions this implementation conforms to [rfc4180](https://
 This is my first adventure with FParsec. Coming from a Scala background I am used to parser combinators but this is my first attempt using FParsec. I welcome each and every comment on the code submitted.
 
 ## New to parser combinators?
-Please start by reading the documentation on [FParsec](http://www.quanttec.com/fparsec/). For sample use cases please check the Csv.test project in this repository.
+Please start by reading the documentation on [FParsec](http://www.quanttec.com/fparsec/). For sample use cases please check the [tests](https://github.com/jwluiten/CsvParser/blob/master/Csv.test/Tests.fs) in this repository.
