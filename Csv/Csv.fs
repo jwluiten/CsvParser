@@ -40,5 +40,4 @@ let buildParser (sep: char) (quote: char): P<_> =
   let qstring = (quotedstring quote)
   let csvField = (qstring <|> rawString) .>> skipWs
   let csvRecord = skipWs >>. sepBy csvField (skipChar sep .>> skipWs)
-  let csvParser = manyTill (csvRecord .>> (skipNewline <|> eof)) eof
-  csvParser
+  manyTill (csvRecord .>> (skipNewline <|> eof)) eof
