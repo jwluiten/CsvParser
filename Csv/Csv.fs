@@ -4,11 +4,11 @@ open FParsec
 
 // csvData ::= (csvRecord)* 'EOF'
 // csvRecord ::= ws* csvFiedlList ('\n' | 'EOF')
-// csvFieldList ::= csvField ws* [sep ws* csvFieldList]
+// csvFieldList ::= csvField ws* (sep ws* csvFieldList)*
 // csvField ::= rawField | quotedString
-// rawField ::= (any character except '\n' 'EOF' sep)
-// quotedField :== quote [quote quote | char] quote
-// ws :== any character in " \t" except sep
+// rawField ::= (any character except '\n' 'EOF' sep)*
+// quotedField :== quote (quote quote | char)* quote
+// ws :== (any character in " \t" except sep)*
 
 // value restriction (see FParsec documentation)
 type P<'t> = Parser<'t, Unit>
