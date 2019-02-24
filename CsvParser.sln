@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Csv", "Csv\Csv.fsproj", "{209CC5D5-01E8-46C9-90D9-23DBBF69198A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Csv.test", "Csv.test\Csv.test.fsproj", "{C3454002-600A-4275-A5C2-E87690FD0CA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{209CC5D5-01E8-46C9-90D9-23DBBF69198A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209CC5D5-01E8-46C9-90D9-23DBBF69198A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209CC5D5-01E8-46C9-90D9-23DBBF69198A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209CC5D5-01E8-46C9-90D9-23DBBF69198A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3454002-600A-4275-A5C2-E87690FD0CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3454002-600A-4275-A5C2-E87690FD0CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3454002-600A-4275-A5C2-E87690FD0CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3454002-600A-4275-A5C2-E87690FD0CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
