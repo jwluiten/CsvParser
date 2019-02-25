@@ -1,7 +1,7 @@
 # CsvParser
 A configurable CsvParser based on [FParsec](http://www.quanttec.com/fparsec/).
 
-## deviations from frc4180
+## deviations from rfc4180
 With the following exceptions this implementation conforms to [rfc4180](https://tools.ietf.org/html/rfc4180)
 
 * contrary to rfc4180 this parser allows for a variable number of columns per row
