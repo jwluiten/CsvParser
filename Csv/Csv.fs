@@ -36,8 +36,8 @@ let buildParser (sep: char) (quote: char): P<_> =
   let ws = if '\t' = sep then " " else " \t"
   let skipWs = many (skipAnyOf ws)
   let fieldStopSet = "\n" + string sep
-  let rawString = many (noneOf fieldStopSet) |>> System.String.Concat |>> trim
+  let rawString = many (noneOf fieldStopSet) |>> System.String.Concat
   let qstring = (quotedstring quote)
-  let csvField = (qstring <|> rawString) .>> skipWs
-  let csvRecord = skipWs >>. sepBy csvField (skipChar sep .>> skipWs)
+  let csvField = (qstring .>> skipWs) <|> rawString
+  let csvRecord = sepBy csvField (skipChar sep)
   manyTill (csvRecord .>> (skipNewline <|> eof)) eof
